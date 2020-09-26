@@ -5,5 +5,5 @@ tagline: Talk is cheap. Show me the code.
 bgImageStyle: {
   height: '450px'
 }
-isShowTitleInHome: false
+isShowTitleInHome: false 
 ---
