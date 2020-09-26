@@ -28,17 +28,19 @@ jobs:
       env:
         CI: true
     - name: Deploy
-      uses: easingthemes/ssh-deploy@v2.0.7
-      env:
-        # Private Key secrets.ALIYUN就是刚才配置的密钥名
+      uses: easingthemes/ssh-deploy@v2.1.5
+      with:
+        # Private Key
         SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
-        # For any initial/required rsync flags
-        ARGS:  "-rltgoDzvO --delete"
-        # Source directory dist/ 需要到远端服务器的文件目录 **填入自己的打包路径**
-        SOURCE: "public/"
-        # Remote host **填入自己的域名**
+        # Remote host
         REMOTE_HOST: "47.56.13.69"
-        # Remote user **填入自己的用户,一般都是root用户**
+        # Remote user
         REMOTE_USER: "root"
-        # Target directory 此处填写的是我博客域名下的action pacth下 **填入自己的域名路径**
-        TARGET: "/www/wwwroot/sineava.top/action/"
+        # Remote port
+        REMOTE_PORT: 80
+        # Source directory
+        SOURCE: "public/"
+        # Target directory
+        TARGET: "/www/wwwroot/sineava.top/"
+        # Arguments to pass to rsync
+        ARGS: "-rltgoDzvO --delete"
