@@ -37,7 +37,7 @@ jobs:
         # Remote user
         REMOTE_USER: "root"
         # Remote port
-        REMOTE_PORT: 80
+        REMOTE_PORT: 22
         # Source directory
         SOURCE: "public/"
         # Target directory
