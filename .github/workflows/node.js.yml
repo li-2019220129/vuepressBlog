@@ -1,0 +1,44 @@
+# This workflow will do a clean install of node dependencies, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+# 因为我是yarn,如果npm就直接使用npm
+
+name: Node.js CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: yarn install
+    - run: yarn build --if-present
+      env:
+        CI: true
+    - name: Deploy
+      uses: easingthemes/ssh-deploy@v2.0.7
+      env:
+        # Private Key secrets.ALIYUN就是刚才配置的密钥名
+        SSH_PRIVATE_KEY: ${{ secrets.ALIYUN }}
+        # For any initial/required rsync flags
+        ARGS:  "-rltgoDzvO --delete"
+        # Source directory dist/ 需要到远端服务器的文件目录 **填入自己的打包路径**
+        SOURCE: "public/"
+        # Remote host **填入自己的域名**
+        REMOTE_HOST: "47.56.13.69"
+        # Remote user **填入自己的用户,一般都是root用户**
+        REMOTE_USER: "root"
+        # Target directory 此处填写的是我博客域名下的action pacth下 **填入自己的域名路径**
+        TARGET: "/www/wwwroot/sineava.top/"
