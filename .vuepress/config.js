@@ -25,6 +25,7 @@ module.exports = {
   },
   "theme": "reco",
   "themeConfig": {
+    "noFoundPageByTencent": true,
     "subSidebar": "auto",
     "valineConfig": {
       "showComment": false,
