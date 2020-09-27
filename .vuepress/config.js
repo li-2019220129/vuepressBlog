@@ -95,14 +95,10 @@ module.exports = {
     },
     "friendLink": [
       {
-        "title": "廖雪峰",
-        "desc": "廖雪峰blog",
-        "link": "https://www.liaoxuefeng.com/"
-      },
-      {
-        "title": "阮一峰",
-        "desc": "阮一峰的网络日志",
-        "link": "http://www.ruanyifeng.com/blog/"
+        "title": '午后南杂',
+        "desc": 'Enjoy when you can, and endure when you must.',
+        "email": 'recoluan@qq.com',
+        "link": 'https://www.recoluan.com'
       }
     ],
     "logo": "/logo.png",
@@ -111,8 +107,8 @@ module.exports = {
     "lastUpdated": "Last Updated",
     "author": "sineava",
     "authorAvatar": "/avatar.png",
-    "record": "xxxx",
-    "startYear": "2017"
+    // "record": "xxxx",
+    "startYear": "2018"
   },
   "markdown": {
     "lineNumbers": true
