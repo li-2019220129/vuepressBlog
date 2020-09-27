@@ -106,7 +106,7 @@ module.exports = {
         "link": "https://www.w3cplus.com/"
       }
     ],
-    "logo": "/avatar.png",
+    "logo": "/logo.png",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
