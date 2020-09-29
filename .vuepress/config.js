@@ -56,6 +56,11 @@ module.exports = {
             "text": "仿美团外卖",
             "link": "http://hoa.sineava.top",
             "icon": "reco-blog"
+          },
+          {
+            "text": "mock音乐",
+            "link": "http://moc.sineava.top",
+            "icon": "reco-blog"
           }
         ]
       },
