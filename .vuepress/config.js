@@ -1,13 +1,13 @@
 module.exports = {
-  "title": "sineava",
-  "description": "Talk is cheap. Show me the code.",
+  "title": "LzyErsa",
+  "description": "Blog show time",
   "dest": "public",
   "head": [
     [
       "link",
       {
         "rel": "icon",
-        "href": "/favicon.ico"
+        // "href": "/favicon.ico"
       }
     ],
     [
@@ -28,8 +28,8 @@ module.exports = {
     "subSidebar": "auto",
     "valineConfig": {
       "showComment": false,
-      "appId": "bIaIoboPJMGaUxlTktaOb69H-gzGzoHsz",// your appId
-      "appKey": '9vk2nQvT9GlKL35uTTt8ntCN', // your appKey
+      "appId": "Icl5AjHFen7xIf5sGYAXOL6r-gzGzoHsz",// your appId
+      "appKey": 'faS6eCmuEWaOK5COh3VGVnol', // your appKey
       "notify": false, 
       "verify": false, 
       "avatar": 'monsterid', 
@@ -76,7 +76,7 @@ module.exports = {
       },
       {
         "text": "GitHub",
-        "link": "https://github.com/sineava",
+        "link": "https://github.com/li-2019220129",
         "icon": "reco-github"
       }],
     "sidebar": {
@@ -111,14 +111,14 @@ module.exports = {
         "link": "https://www.w3cplus.com/"
       }
     ],
-    "logo": "/logo.png",
+    "logo": "/logo.jpg",
     "search": true,
     "searchMaxSuggestions": 10,
     "lastUpdated": "Last Updated",
-    "author": "sineava",
-    "authorAvatar": "/avatar.png",
+    "author": "LzyErsa",
+    "authorAvatar": "/avatar.jpg",
     // "record": "xxxx",
-    "startYear": "2018"
+    "startYear": "2021"
   },
   "markdown": {
     "lineNumbers": true

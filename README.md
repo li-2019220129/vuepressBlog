@@ -1,7 +1,7 @@
 ---
 home: true
-heroText: 南风过境
-tagline: 今夕何夕,见此良人
+heroText: LzyErsa
+tagline: 花开花落又一年，人面憔悴尽思言
 bgImageStyle: {
   height: '450px'
 }

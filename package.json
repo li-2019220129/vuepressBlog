@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "sineava",
   "scripts": {
-    "dev": "vuepress dev . --open --host \"localhost\"",
+    "dev": "vuepress dev .",
     "build": "vuepress build ."
   },
   "devDependencies": {
