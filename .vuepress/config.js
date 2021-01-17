@@ -7,7 +7,7 @@ module.exports = {
       "link",
       {
         "rel": "icon",
-        // "href": "/favicon.ico"
+        "href": "/favicon.ico"
       }
     ],
     [
@@ -49,17 +49,12 @@ module.exports = {
         "items": [
           {
             "text": "vue管理系统",
-            "link": "http://www.sineava.top",
+            "link": "",
             "icon": "reco-blog"
           },
           {
-            "text": "仿美团外卖",
-            "link": "http://hoa.sineava.top",
-            "icon": "reco-blog"
-          },
-          {
-            "text": "mock音乐",
-            "link": "http://moc.sineava.top",
+            "text": "音乐小程序",
+            "link": "",
             "icon": "reco-blog"
           }
         ]
