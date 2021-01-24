@@ -1,7 +1,7 @@
 {
   "name": "reco-blog",
   "version": "1.0.0",
-  "author": "sineava",
+  "author": "LzyErsa",
   "scripts": {
     "dev": "vuepress dev .",
     "build": "vuepress build .",
