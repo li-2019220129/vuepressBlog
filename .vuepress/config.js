@@ -99,11 +99,6 @@ module.exports = {
         "desc": 'Enjoy when you can, and endure when you must.',
         "email": 'recoluan@qq.com',
         "link": 'https://www.recoluan.com'
-      },
-      {
-        "title": "大漠",
-        "desc": "w3cplus创始人",
-        "link": "https://www.w3cplus.com/"
       }
     ],
     "logo": "/logo.jpg",
