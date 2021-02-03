@@ -43,7 +43,7 @@ script end
 promise2
 end
 setTimeout
-
+async2
 ```
 ## 关于await问题
   1.async-await本质上是promise的回调，把async-await看成promise就好理解上面的代码
